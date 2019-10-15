@@ -11,7 +11,7 @@ namespace Votowf
     {
         public string conectar()
         {
-            SQLiteConnection cnx = new SQLiteConnection("Data Source=C:\\bdd\\sm.3.s3db; Version=3;");
+            SQLiteConnection cnx = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;");
             try
             {
                 cnx.Open();
@@ -33,7 +33,7 @@ namespace Votowf
 
         public string consultasinreaultado(string sql)
         {
-            SQLiteConnection cnx = new SQLiteConnection("Data Source = C:\\bdd\\sm.3.s3db; Version=3;");
+            SQLiteConnection cnx = new SQLiteConnection("Data Source = C:\\bdd\\sm.s3db; Version=3;");
             try
             {
                 cnx.Open();
@@ -55,7 +55,7 @@ namespace Votowf
         {
             SQLiteDataAdapter ad;
             DataTable dt = new DataTable();
-            SQLiteConnection cnx = new SQLiteConnection("Data Source = C:\\bdd\\sm.3.s3db; Version=3;");
+            SQLiteConnection cnx = new SQLiteConnection("Data Source = C:\\bdd\\sm.s3db; Version=3;");
             try
             {
                 cnx.Open();

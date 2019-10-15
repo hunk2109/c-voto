@@ -10,24 +10,16 @@ using System.Windows.Forms;
 
 namespace Votowf
 {
-    public partial class gonzalo : Form
+    public partial class maria : Form
     {
-        public gonzalo()
+        public maria()
         {
             InitializeComponent();
         }
 
-        private void gonzalo_Load(object sender, EventArgs e)
-        {
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.ControlBox = false;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-        }
-
         private void btnreto_Click(object sender, EventArgs e)
         {
-            presidente f = new presidente();
+            Senador f = new Senador();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
@@ -36,8 +28,8 @@ namespace Votowf
         private void btncongon1_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update Presidente set votos = votos + 1 where idpre = 1");
-            Senador f = new Senador();
+            oper.consultasinreaultado("Update senador set voto = voto + 1 where idsen = 1");
+            Diputado f = new Diputado();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
@@ -46,11 +38,25 @@ namespace Votowf
         private void btncont_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update Presidente set votos = votos + 1 where idpre = 1");
-            Senador f = new Senador();
+            oper.consultasinreaultado("Update senador set voto = voto + 1 where idsen = 1");
+            Diputado f = new Diputado();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

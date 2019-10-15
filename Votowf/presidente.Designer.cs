@@ -30,7 +30,6 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnleo = new System.Windows.Forms.Button();
-            this.btncre = new System.Windows.Forms.Button();
             this.Btngon = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,22 +48,12 @@
             // 
             this.btnleo.BackgroundImage = global::Votowf.Properties.Resources.LEONELFERNANDEZ;
             this.btnleo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnleo.Location = new System.Drawing.Point(353, 91);
+            this.btnleo.Location = new System.Drawing.Point(163, 91);
             this.btnleo.Name = "btnleo";
             this.btnleo.Size = new System.Drawing.Size(128, 125);
             this.btnleo.TabIndex = 2;
             this.btnleo.UseVisualStyleBackColor = true;
             this.btnleo.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btncre
-            // 
-            this.btncre.BackgroundImage = global::Votowf.Properties.Resources.MANUELCRESPO;
-            this.btncre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btncre.Location = new System.Drawing.Point(181, 91);
-            this.btncre.Name = "btncre";
-            this.btncre.Size = new System.Drawing.Size(128, 125);
-            this.btncre.TabIndex = 1;
-            this.btncre.UseVisualStyleBackColor = true;
             // 
             // Btngon
             // 
@@ -85,7 +74,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnleo);
-            this.Controls.Add(this.btncre);
             this.Controls.Add(this.Btngon);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -101,7 +89,6 @@
         #endregion
 
         private System.Windows.Forms.Button Btngon;
-        private System.Windows.Forms.Button btncre;
         private System.Windows.Forms.Button btnleo;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

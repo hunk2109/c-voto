@@ -27,7 +27,7 @@ namespace Votowf
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Senador f = new Senador();
+            Leonel f = new Leonel();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();

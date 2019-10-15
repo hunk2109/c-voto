@@ -97,6 +97,12 @@
     <Compile Include="Diputado.Designer.cs">
       <DependentUpon>Diputado.cs</DependentUpon>
     </Compile>
+    <Compile Include="dolorez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dolorez.Designer.cs">
+      <DependentUpon>dolorez.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,7 +115,25 @@
     <Compile Include="gonzalo.Designer.cs">
       <DependentUpon>gonzalo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Leonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leonel.Designer.cs">
+      <DependentUpon>Leonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maria.Designer.cs">
+      <DependentUpon>maria.cs</DependentUpon>
+    </Compile>
     <Compile Include="operaciones.cs" />
+    <Compile Include="pedro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pedro.Designer.cs">
+      <DependentUpon>pedro.cs</DependentUpon>
+    </Compile>
     <Compile Include="presidente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +163,23 @@
     <EmbeddedResource Include="Diputado.resx">
       <DependentUpon>Diputado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dolorez.resx">
+      <DependentUpon>dolorez.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gonzalo.resx">
       <DependentUpon>gonzalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leonel.resx">
+      <DependentUpon>Leonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maria.resx">
+      <DependentUpon>maria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pedro.resx">
+      <DependentUpon>pedro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presidente.resx">
       <DependentUpon>presidente.cs</DependentUpon>
@@ -213,6 +249,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2019-10-15 Buscar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />

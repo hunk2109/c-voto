@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Votowf
 {
-    public partial class Senador : Form
+    public partial class Leonel : Form
     {
-        public Senador()
+        public Leonel()
         {
             InitializeComponent();
         }
 
-        private void Senador_Load(object sender, EventArgs e)
+        private void Leonel_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
@@ -25,31 +25,32 @@ namespace Votowf
             this.MinimizeBox = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnreto_Click(object sender, EventArgs e)
         {
-
-            maria f = new maria();
+            presidente f = new presidente();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btncongon1_Click(object sender, EventArgs e)
         {
-            pedro f = new pedro();
+            operaciones oper = new operaciones();
+            oper.consultasinreaultado("Update  presidente set votos = votos + 1 where idpre = 3");
+            Senador f = new Senador();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btncont_Click(object sender, EventArgs e)
         {
-            dolorez f = new dolorez();
+            operaciones oper = new operaciones();
+            oper.consultasinreaultado("Update Presidente set votos = votos + 1 where idpre = 3");
+            Senador f = new Senador();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
         }
-
     }
-    }
-
+}
