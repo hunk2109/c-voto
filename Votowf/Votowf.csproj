@@ -291,6 +291,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\sm.s3db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
