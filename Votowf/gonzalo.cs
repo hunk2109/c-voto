@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Votowf
 {
-    public partial class presidente : Form
+    public partial class gonzalo : Form
     {
-        public presidente()
+        public gonzalo()
         {
             InitializeComponent();
         }
 
-        private void presidente_Load(object sender, EventArgs e)
+        private void gonzalo_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
@@ -25,18 +25,9 @@ namespace Votowf
             this.MinimizeBox = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnreto_Click(object sender, EventArgs e)
         {
-            Senador f = new Senador();
-            f.MdiParent = this.MdiParent;
-            f.Show();
-            this.Close();
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            gonzalo f = new gonzalo();
+            presidente f = new presidente();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();

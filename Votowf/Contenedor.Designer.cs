@@ -39,6 +39,7 @@
             this.Name = "Contenedor";
             this.ShowIcon = false;
             this.Text = "Contenedor";
+            this.Load += new System.EventHandler(this.Contenedor_Load);
             this.ResumeLayout(false);
 
         }

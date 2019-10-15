@@ -16,5 +16,16 @@ namespace Votowf
         {
             InitializeComponent();
         }
+
+        private void Contenedor_Load(object sender, EventArgs e)
+        {
+            presidente f = new presidente();
+            f.MdiParent = this;
+            f.ControlBox = false;
+            f.MinimizeBox = false;
+            f.MaximizeBox = false;
+            f.WindowState = FormWindowState.Maximized;
+            f.Show();
+        }
     }
 }
