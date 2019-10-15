@@ -108,6 +108,7 @@
             this.btncongon1.Size = new System.Drawing.Size(475, 330);
             this.btncongon1.TabIndex = 0;
             this.btncongon1.UseVisualStyleBackColor = true;
+            this.btncongon1.Click += new System.EventHandler(this.btncongon1_Click);
             // 
             // gonzalo
             // 

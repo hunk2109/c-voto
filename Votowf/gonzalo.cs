@@ -32,5 +32,10 @@ namespace Votowf
             f.Show();
             this.Close();
         }
+
+        private void btncongon1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
