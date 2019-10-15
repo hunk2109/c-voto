@@ -79,7 +79,6 @@
             this.MinimizeBox = false;
             this.Name = "presidente";
             this.Text = "Pesidente";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.presidente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
