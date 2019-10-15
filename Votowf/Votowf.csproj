@@ -85,6 +85,12 @@
     <Compile Include="Alcalde.Designer.cs">
       <DependentUpon>Alcalde.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alma.Designer.cs">
+      <DependentUpon>Alma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contenedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,17 +109,47 @@
     <Compile Include="dolorez.Designer.cs">
       <DependentUpon>dolorez.cs</DependentUpon>
     </Compile>
+    <Compile Include="Elisabeth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elisabeth.Designer.cs">
+      <DependentUpon>Elisabeth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gabriel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gabriel.Designer.cs">
+      <DependentUpon>Gabriel.cs</DependentUpon>
+    </Compile>
     <Compile Include="gonzalo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="gonzalo.Designer.cs">
       <DependentUpon>gonzalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="julia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="julia.Designer.cs">
+      <DependentUpon>julia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Julio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Julio.Designer.cs">
+      <DependentUpon>Julio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="karina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="karina.Designer.cs">
+      <DependentUpon>karina.cs</DependentUpon>
     </Compile>
     <Compile Include="Leonel.cs">
       <SubType>Form</SubType>
@@ -126,6 +162,12 @@
     </Compile>
     <Compile Include="maria.Designer.cs">
       <DependentUpon>maria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="miguel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="miguel.Designer.cs">
+      <DependentUpon>miguel.cs</DependentUpon>
     </Compile>
     <Compile Include="operaciones.cs" />
     <Compile Include="pedro.cs">
@@ -142,6 +184,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ramon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ramon.Designer.cs">
+      <DependentUpon>Ramon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ramona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ramona.Designer.cs">
+      <DependentUpon>Ramona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Regidor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +211,9 @@
     <EmbeddedResource Include="Alcalde.resx">
       <DependentUpon>Alcalde.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Alma.resx">
+      <DependentUpon>Alma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contenedor.resx">
       <DependentUpon>Contenedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,17 +223,35 @@
     <EmbeddedResource Include="dolorez.resx">
       <DependentUpon>dolorez.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Elisabeth.resx">
+      <DependentUpon>Elisabeth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gabriel.resx">
+      <DependentUpon>Gabriel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="gonzalo.resx">
       <DependentUpon>gonzalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="julia.resx">
+      <DependentUpon>julia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Julio.resx">
+      <DependentUpon>Julio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="karina.resx">
+      <DependentUpon>karina.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Leonel.resx">
       <DependentUpon>Leonel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="maria.resx">
       <DependentUpon>maria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="miguel.resx">
+      <DependentUpon>miguel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pedro.resx">
       <DependentUpon>pedro.cs</DependentUpon>
@@ -194,6 +269,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Ramon.resx">
+      <DependentUpon>Ramon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ramona.resx">
+      <DependentUpon>Ramona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Regidor.resx">
       <DependentUpon>Regidor.cs</DependentUpon>
     </EmbeddedResource>

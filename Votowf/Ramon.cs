@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace Votowf
 {
-    public partial class pedro : Form
+    public partial class Ramon : Form
     {
-        public pedro()
+        public Ramon()
         {
             InitializeComponent();
         }
 
+        private void Ramon_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnreto_Click(object sender, EventArgs e)
         {
-            Senador f = new Senador();
+            Diputado f = new Diputado();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
@@ -28,8 +33,8 @@ namespace Votowf
         private void btncont_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update senador set voto = voto + 1 where idsen = 2");
-            Diputado f = new Diputado();
+            oper.consultasinreaultado("Update Diputado set voto = voto + 1 where iddip = 1");
+            Alcalde f = new Alcalde();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
@@ -38,26 +43,11 @@ namespace Votowf
         private void btncongon1_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update senador set voto = voto + 1 where idsen = 2");
-            Diputado f = new Diputado();
+            oper.consultasinreaultado("Update Diputado set voto = voto + 1 where iddip = 1");
+            Alcalde f = new Alcalde();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

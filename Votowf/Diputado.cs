@@ -16,5 +16,30 @@ namespace Votowf
         {
             InitializeComponent();
         }
+
+        private void btnca1_Click(object sender, EventArgs e)
+        {
+            Ramon f = new Ramon();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
+        }
+
+        private void btncan2_Click(object sender, EventArgs e)
+        {
+           karina f = new karina();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
+
+        }
+
+        private void btncan3_Click(object sender, EventArgs e)
+        {
+            Gabriel f = new Gabriel();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
+        }
     }
 }

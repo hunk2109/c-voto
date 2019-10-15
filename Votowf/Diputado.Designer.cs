@@ -42,6 +42,7 @@
             this.btncan3.Size = new System.Drawing.Size(128, 125);
             this.btncan3.TabIndex = 4;
             this.btncan3.UseVisualStyleBackColor = true;
+            this.btncan3.Click += new System.EventHandler(this.btncan3_Click);
             // 
             // btncan2
             // 
@@ -52,6 +53,7 @@
             this.btncan2.Size = new System.Drawing.Size(128, 125);
             this.btncan2.TabIndex = 3;
             this.btncan2.UseVisualStyleBackColor = true;
+            this.btncan2.Click += new System.EventHandler(this.btncan2_Click);
             // 
             // btnca1
             // 
@@ -62,6 +64,7 @@
             this.btnca1.Size = new System.Drawing.Size(128, 125);
             this.btnca1.TabIndex = 2;
             this.btnca1.UseVisualStyleBackColor = true;
+            this.btnca1.Click += new System.EventHandler(this.btnca1_Click);
             // 
             // Diputado
             // 
