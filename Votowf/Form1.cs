@@ -104,16 +104,7 @@ namespace Votowf
                 string decoded = result.ToString().Trim();
                 textBox1.Text = decoded;
 
-                if (decoded == "12345")
-                {
-                    timer1.Stop();
-                    button2.Enabled = true;
-                    textBox1.Text = decoded;
-                    partidos f = new partidos();
-                    f.MdiParent = this.MdiParent;
-                    f.Show();
-                    this.Close();
-                }
+                
                 
 
             }
