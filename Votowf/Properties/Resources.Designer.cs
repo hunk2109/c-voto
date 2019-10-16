@@ -233,6 +233,26 @@ namespace Votowf.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap no_votar {
+            get {
+                object obj = ResourceManager.GetObject("no-votar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap partido_pld {
+            get {
+                object obj = ResourceManager.GetObject("partido-pld", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2019_10_15_Buscar {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2019-10-15 Buscar", resourceCulture);
@@ -266,6 +286,26 @@ namespace Votowf.Properties {
         internal static System.Drawing.Bitmap Screenshot_2019_10_15_Junta_Central_Electoral {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_2019-10-15 Junta Central Electoral", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_16_Vota_por_Leonel_Fernández_Presidente_2020 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-16 Vota por Leonel Fernández Presidente 2020", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_16_Vota_por_Leonel_Fernández_Presidente_2020_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-16 Vota por Leonel Fernández Presidente 2020(1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

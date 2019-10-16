@@ -19,7 +19,8 @@ namespace Votowf
 
         private void Contenedor_Load(object sender, EventArgs e)
         {
-            presidente f = new presidente();
+
+            Form1 f = new Form1();
             f.MdiParent = this;
             f.ControlBox = false;
             f.MinimizeBox = false;

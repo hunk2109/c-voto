@@ -170,11 +170,23 @@
       <DependentUpon>miguel.cs</DependentUpon>
     </Compile>
     <Compile Include="operaciones.cs" />
+    <Compile Include="partidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="partidos.Designer.cs">
+      <DependentUpon>partidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="pedro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="pedro.Designer.cs">
       <DependentUpon>pedro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pld.Designer.cs">
+      <DependentUpon>pld.cs</DependentUpon>
     </Compile>
     <Compile Include="presidente.cs">
       <SubType>Form</SubType>
@@ -253,8 +265,14 @@
     <EmbeddedResource Include="miguel.resx">
       <DependentUpon>miguel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="partidos.resx">
+      <DependentUpon>partidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pedro.resx">
       <DependentUpon>pedro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pld.resx">
+      <DependentUpon>pld.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="presidente.resx">
       <DependentUpon>presidente.cs</DependentUpon>
@@ -355,6 +373,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot_2019-10-15 Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partido-pld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-votar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2019-10-16 Vota por Leonel Fernández Presidente 2020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_2019-10-16 Vota por Leonel Fernández Presidente 2020%281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />

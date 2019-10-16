@@ -25,8 +25,10 @@ namespace Votowf
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Contenedor f = new Contenedor();
+            partidos f = new partidos();
+            f.MdiParent = this.MdiParent;
             f.Show();
+            this.Close();
         }
     }
 }
