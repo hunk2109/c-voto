@@ -48,21 +48,34 @@ namespace Votowf
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-
-            CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo Device in CaptureDevice)
+            try
             {
-                comboBox1.Items.Add(Device.Name);
+                CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+                foreach (FilterInfo Device in CaptureDevice)
+                {
+                    comboBox1.Items.Add(Device.Name);
+                }
+                comboBox1.SelectedIndex = 0;
+                FinalFrame = new VideoCaptureDevice();
             }
-            comboBox1.SelectedIndex = 0;
-            FinalFrame = new VideoCaptureDevice();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "No hay Camara");
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (FinalFrame.IsRunning == true)
+            try
             {
-                FinalFrame.Stop();
+                if (FinalFrame.IsRunning == true)
+                {
+                    FinalFrame.Stop();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
