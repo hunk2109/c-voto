@@ -19,7 +19,19 @@ namespace Votowf
 
         private void Btngon_Click(object sender, EventArgs e)
         {
+            pld f = new pld();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
 
+        }
+
+        private void partidos_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ControlBox = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
     }
 }

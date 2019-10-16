@@ -30,5 +30,13 @@ namespace Votowf
             f.Show();
             this.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ControlBox = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+        }
     }
 }

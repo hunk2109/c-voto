@@ -51,6 +51,7 @@
             this.btnreto.TabIndex = 23;
             this.btnreto.Text = "Retornar";
             this.btnreto.UseVisualStyleBackColor = false;
+            this.btnreto.Click += new System.EventHandler(this.btnreto_Click);
             // 
             // btncont
             // 
@@ -62,9 +63,11 @@
             this.btncont.TabIndex = 22;
             this.btncont.Text = "Continuar";
             this.btncont.UseVisualStyleBackColor = false;
+            this.btncont.Click += new System.EventHandler(this.btncont_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(292, 493);
             this.label1.Name = "label1";
@@ -74,6 +77,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_16_Vota_por_Leonel_Fernández_Presidente_2020_1_;
             this.pictureBox3.Location = new System.Drawing.Point(9, 68);
             this.pictureBox3.Name = "pictureBox3";
@@ -84,13 +88,15 @@
             // 
             // Btngon
             // 
+            this.Btngon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Btngon.BackgroundImage = global::Votowf.Properties.Resources.partido_pld;
             this.Btngon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btngon.Location = new System.Drawing.Point(143, 195);
+            this.Btngon.Location = new System.Drawing.Point(146, 195);
             this.Btngon.Name = "Btngon";
             this.Btngon.Size = new System.Drawing.Size(319, 287);
             this.Btngon.TabIndex = 25;
             this.Btngon.UseVisualStyleBackColor = true;
+            this.Btngon.Click += new System.EventHandler(this.Btngon_Click);
             // 
             // pictureBox1
             // 
@@ -106,6 +112,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
@@ -128,6 +135,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "pld";
             this.Text = "pld";
+            this.Load += new System.EventHandler(this.pld_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
