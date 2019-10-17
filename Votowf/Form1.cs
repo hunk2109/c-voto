@@ -194,5 +194,10 @@ namespace Votowf
         {
             startseccion();
         }
+
+        private void Btntervot_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

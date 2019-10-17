@@ -37,8 +37,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btntervot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +45,7 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button1.Location = new System.Drawing.Point(7, 325);
+            this.button1.Location = new System.Drawing.Point(119, 325);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -57,7 +56,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(43, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(155, 81);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(356, 226);
             this.pictureBox1.TabIndex = 1;
@@ -67,7 +66,7 @@
             // 
             this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 325);
+            this.comboBox1.Location = new System.Drawing.Point(200, 325);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(253, 21);
             this.comboBox1.TabIndex = 2;
@@ -75,7 +74,7 @@
             // btnini
             // 
             this.btnini.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnini.Location = new System.Drawing.Point(275, 365);
+            this.btnini.Location = new System.Drawing.Point(387, 365);
             this.btnini.Name = "btnini";
             this.btnini.Size = new System.Drawing.Size(75, 23);
             this.btnini.TabIndex = 3;
@@ -86,7 +85,7 @@
             // btncap
             // 
             this.btncap.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btncap.Location = new System.Drawing.Point(88, 364);
+            this.btncap.Location = new System.Drawing.Point(200, 364);
             this.btncap.Name = "btncap";
             this.btncap.Size = new System.Drawing.Size(75, 23);
             this.btncap.TabIndex = 4;
@@ -101,7 +100,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox1.Location = new System.Drawing.Point(169, 367);
+            this.textBox1.Location = new System.Drawing.Point(281, 367);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -112,34 +111,29 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 25);
+            this.pictureBox3.Location = new System.Drawing.Point(124, 25);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(405, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 42;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // btntervot
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 393);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 43;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(118, 393);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 44;
+            this.btntervot.Location = new System.Drawing.Point(491, 318);
+            this.btntervot.Name = "btntervot";
+            this.btntervot.Size = new System.Drawing.Size(75, 37);
+            this.btntervot.TabIndex = 43;
+            this.btntervot.Text = "Terminar Votacion";
+            this.btntervot.UseVisualStyleBackColor = true;
+            this.btntervot.Click += new System.EventHandler(this.Btntervot_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(429, 414);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(653, 414);
+            this.Controls.Add(this.btntervot);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btncap);
@@ -168,8 +162,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btntervot;
     }
 }
 
