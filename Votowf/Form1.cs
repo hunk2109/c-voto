@@ -69,6 +69,8 @@ namespace Votowf
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "No hay Camara");
+
+
             }
         }
 
@@ -147,11 +149,24 @@ namespace Votowf
                     partidos f = new partidos();
                     f.MdiParent = this.MdiParent;
                     f.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Esta Persona ya voto");
+                    btnini.Enabled = true;
+
+                    try
+                    {
+                        if (FinalFrame.IsRunning == true)
+                        {
+                            FinalFrame.Stop();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
             catch (Exception ex)
