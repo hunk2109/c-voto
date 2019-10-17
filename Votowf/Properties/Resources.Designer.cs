@@ -309,5 +309,55 @@ namespace Votowf.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_17_Buscar {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-17 Buscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_17_Buscar_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-17 Buscar(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_17_Buscar_2_ {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-17 Buscar(2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_17_Buscar_3_ {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-17 Buscar(3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2019_10_17_Confirmar {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2019-10-17 Confirmar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

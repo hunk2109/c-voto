@@ -67,7 +67,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox3.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Buscar;
+            this.pictureBox3.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_17_Buscar_1_;
             this.pictureBox3.Location = new System.Drawing.Point(83, 77);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(475, 50);
