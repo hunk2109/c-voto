@@ -242,6 +242,12 @@
     <Compile Include="Senador.Designer.cs">
       <DependentUpon>Senador.cs</DependentUpon>
     </Compile>
+    <Compile Include="valcalimp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>valcalimp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="vdipimp.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -374,6 +380,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Senador.resx">
       <DependentUpon>Senador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="valcalimp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>valcalimp.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="vdipimp.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
