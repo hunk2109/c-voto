@@ -11,6 +11,7 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using ZXing.QrCode;
+using System.Data.SQLite;
 
 namespace Votowf
 {
@@ -85,13 +86,13 @@ namespace Votowf
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
             button1.Enabled = false;
-            button2.Enabled = true;
+            btnini.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            button2.Enabled = false;
+            btnini.Enabled = false;
             textBox1.Text = "";
         }
 
@@ -107,7 +108,7 @@ namespace Votowf
                 if (decoded == "12345")
                 {
                     timer1.Stop();
-                    button2.Enabled = true;
+                    btnini.Enabled = true;
                     textBox1.Text = decoded;
                     partidos f = new partidos();
                     f.MdiParent = this.MdiParent;
@@ -121,6 +122,48 @@ namespace Votowf
             {
 
             }
+        }
+
+        public void startseccion()
+        {
+            operaciones oper = new operaciones();
+            string actuser = Convert.ToString(textBox1.Text);
+            SQLiteConnection cnx = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;");
+            try
+            {
+                cnx.Open();
+                SQLiteDataAdapter ad;
+                DataTable dt = new DataTable();
+                SQLiteCommand cmd = cnx.CreateCommand();
+                cmd.CommandText = "select * from cedula where numced = '"+textBox1.Text+"'";
+                ad = new SQLiteDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+                ad.Fill(dt);
+                ds.Tables.Add(dt);
+                if (dt.Rows.Count <= 0)
+                {
+                    oper.consultasinreaultado("Insert into cedula(numced)values('" + textBox1.Text + "')");
+                    partidos f = new partidos();
+                    f.MdiParent = this.MdiParent;
+                    f.Show();
+                    this.Close();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Esta Persona ya voto");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            startseccion();
         }
     }
 }

@@ -32,8 +32,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnini = new System.Windows.Forms.Button();
+            this.btncap = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,7 +45,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Prueba";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -65,25 +65,25 @@
             this.comboBox1.Size = new System.Drawing.Size(253, 21);
             this.comboBox1.TabIndex = 2;
             // 
-            // button2
+            // btnini
             // 
-            this.button2.Location = new System.Drawing.Point(274, 270);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnini.Location = new System.Drawing.Point(274, 270);
+            this.btnini.Name = "btnini";
+            this.btnini.Size = new System.Drawing.Size(75, 23);
+            this.btnini.TabIndex = 3;
+            this.btnini.Text = "Iniciar";
+            this.btnini.UseVisualStyleBackColor = true;
+            this.btnini.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btncap
             // 
-            this.button3.Location = new System.Drawing.Point(87, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btncap.Location = new System.Drawing.Point(87, 269);
+            this.btncap.Name = "btncap";
+            this.btncap.Size = new System.Drawing.Size(75, 23);
+            this.btncap.TabIndex = 4;
+            this.btncap.Text = "Capturar";
+            this.btncap.UseVisualStyleBackColor = true;
+            this.btncap.Click += new System.EventHandler(this.button3_Click);
             // 
             // timer1
             // 
@@ -95,6 +95,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
@@ -102,8 +103,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 354);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btncap);
+            this.Controls.Add(this.btnini);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
@@ -122,8 +123,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnini;
+        private System.Windows.Forms.Button btncap;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textBox1;
     }

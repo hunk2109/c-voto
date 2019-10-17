@@ -69,7 +69,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(292, 493);
+            this.label1.Location = new System.Drawing.Point(298, 507);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 13);
             this.label1.TabIndex = 26;
@@ -79,7 +79,7 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_16_Vota_por_Leonel_Fernández_Presidente_2020_1_;
-            this.pictureBox3.Location = new System.Drawing.Point(9, 68);
+            this.pictureBox3.Location = new System.Drawing.Point(9, 83);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(559, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -91,7 +91,7 @@
             this.Btngon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Btngon.BackgroundImage = global::Votowf.Properties.Resources.partido_pld;
             this.Btngon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btngon.Location = new System.Drawing.Point(146, 195);
+            this.Btngon.Location = new System.Drawing.Point(149, 217);
             this.Btngon.Name = "Btngon";
             this.Btngon.Size = new System.Drawing.Size(319, 287);
             this.Btngon.TabIndex = 25;
@@ -114,7 +114,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 27);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(559, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
