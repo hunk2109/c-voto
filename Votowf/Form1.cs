@@ -11,7 +11,6 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using ZXing.QrCode;
-using System.Data.SQLite;
 
 namespace Votowf
 {
@@ -27,7 +26,14 @@ namespace Votowf
 
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pictureBox1.Image = (Image)eventArgs.Frame.Clone();
+            try
+            {
+                pictureBox1.Image = (Image)eventArgs.Frame.Clone();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -86,35 +92,27 @@ namespace Votowf
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
             button1.Enabled = false;
-            btnini.Enabled = true;
+            button2.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            btnini.Enabled = false;
+            button2.Enabled = false;
             textBox1.Text = "";
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            BarcodeReader Reader = new BarcodeReader();
-            Result result = Reader.Decode((Bitmap)pictureBox1.Image);
             try
             {
+                BarcodeReader Reader = new BarcodeReader();
+            Result result = Reader.Decode((Bitmap)pictureBox1.Image);
+           
                 string decoded = result.ToString().Trim();
                 textBox1.Text = decoded;
 
-                if (decoded == "12345")
-                {
-                    timer1.Stop();
-                    btnini.Enabled = true;
-                    textBox1.Text = decoded;
-                    partidos f = new partidos();
-                    f.MdiParent = this.MdiParent;
-                    f.Show();
-                    this.Close();
-                }
+                
                 
 
             }
@@ -122,48 +120,6 @@ namespace Votowf
             {
 
             }
-        }
-
-        public void startseccion()
-        {
-            operaciones oper = new operaciones();
-            string actuser = Convert.ToString(textBox1.Text);
-            SQLiteConnection cnx = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;");
-            try
-            {
-                cnx.Open();
-                SQLiteDataAdapter ad;
-                DataTable dt = new DataTable();
-                SQLiteCommand cmd = cnx.CreateCommand();
-                cmd.CommandText = "select * from cedula where numced = '"+textBox1.Text+"'";
-                ad = new SQLiteDataAdapter(cmd);
-
-                DataSet ds = new DataSet();
-                ad.Fill(dt);
-                ds.Tables.Add(dt);
-                if (dt.Rows.Count <= 0)
-                {
-                    oper.consultasinreaultado("Insert into cedula(numced)values('" + textBox1.Text + "')");
-                    partidos f = new partidos();
-                    f.MdiParent = this.MdiParent;
-                    f.Show();
-                    this.Close();
-                    
-                }
-                else
-                {
-                    MessageBox.Show("Esta Persona ya voto");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            startseccion();
         }
     }
 }
