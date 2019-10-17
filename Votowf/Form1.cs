@@ -11,6 +11,7 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
 using ZXing.QrCode;
+using System.Data.SQLite;
 
 namespace Votowf
 {
@@ -122,9 +123,46 @@ namespace Votowf
             }
         }
 
+
+        public void startseccion()
+        {
+           
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            operaciones oper = new operaciones();
+            string actuser = Convert.ToString(textBox1.Text);
+            SQLiteConnection cnx = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;");
+            try
+            {
+                cnx.Open();
+                SQLiteDataAdapter ad;
+                DataTable dt = new DataTable();
+                SQLiteCommand cmd = cnx.CreateCommand();
+                cmd.CommandText = "select numced from cedula where numced = '" + textBox1.Text + "'";
+                ad = new SQLiteDataAdapter(cmd);
 
+                DataSet ds = new DataSet();
+                ad.Fill(dt);
+                ds.Tables.Add(dt);
+                if (dt.Rows.Count <= 0)
+                {
+                    oper.consultasinreaultado("insert into cedula(numced)values('" + textBox1.Text + "')");
+                    partidos f = new partidos();
+                    f.MdiParent = this.MdiParent;
+                    f.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Esta Persona ya voto");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
