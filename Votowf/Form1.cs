@@ -26,7 +26,14 @@ namespace Votowf
 
         private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            pictureBox1.Image = (Image)eventArgs.Frame.Clone();
+            try
+            {
+                pictureBox1.Image = (Image)eventArgs.Frame.Clone();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -97,10 +104,11 @@ namespace Votowf
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            BarcodeReader Reader = new BarcodeReader();
-            Result result = Reader.Decode((Bitmap)pictureBox1.Image);
             try
             {
+                BarcodeReader Reader = new BarcodeReader();
+            Result result = Reader.Decode((Bitmap)pictureBox1.Image);
+           
                 string decoded = result.ToString().Trim();
                 textBox1.Text = decoded;
 
