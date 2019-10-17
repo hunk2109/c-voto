@@ -92,13 +92,13 @@ namespace Votowf
             FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
             FinalFrame.Start();
             button1.Enabled = false;
-            button2.Enabled = true;
+            btnini.Enabled = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            button2.Enabled = false;
+            btnini.Enabled = false;
             textBox1.Text = "";
         }
 
@@ -120,6 +120,11 @@ namespace Votowf
             {
 
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
