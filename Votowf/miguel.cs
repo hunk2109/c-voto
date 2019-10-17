@@ -30,7 +30,7 @@ namespace Votowf
         {
             operaciones oper = new operaciones();
             oper.consultasinreaultado("Update regidor set voto = voto + 1, fecha ='" + DateTime.Now + "' where idreg = 2");
-            Regidor f = new Regidor();
+            voto f = new voto();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
@@ -40,7 +40,7 @@ namespace Votowf
         {
             operaciones oper = new operaciones();
             oper.consultasinreaultado("Update regidor set voto = voto + 1 , fecha ='" + DateTime.Now + "'where idreg = 2");
-            Regidor f = new Regidor();
+            voto f = new voto();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
