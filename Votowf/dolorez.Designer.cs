@@ -34,6 +34,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncongon1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,8 +78,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
             this.pictureBox2.Location = new System.Drawing.Point(30, 12);
             this.pictureBox2.Name = "pictureBox2";
@@ -106,16 +106,27 @@
             this.btncongon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncongon1.Location = new System.Drawing.Point(88, 250);
             this.btncongon1.Name = "btncongon1";
-            this.btncongon1.Size = new System.Drawing.Size(475, 330);
+            this.btncongon1.Size = new System.Drawing.Size(475, 308);
             this.btncongon1.TabIndex = 18;
             this.btncongon1.UseVisualStyleBackColor = true;
             this.btncongon1.Click += new System.EventHandler(this.btncongon1_Click);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(291, 561);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Dolores Ureña";
             // 
             // dolorez
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 592);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -128,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -139,5 +151,6 @@
         private System.Windows.Forms.Button btnreto;
         private System.Windows.Forms.Button btncont;
         private System.Windows.Forms.Button btncongon1;
+        private System.Windows.Forms.Label label3;
     }
 }

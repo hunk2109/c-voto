@@ -35,5 +35,17 @@ namespace Votowf
             vdipv f = new vdipv();
             f.Show();
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            valcd f = new valcd();
+            f.Show();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            vregv f = new vregv();
+            f.Show();
+        }
     }
 }

@@ -34,6 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncongon1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -95,7 +96,7 @@
             this.btncongon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncongon1.Location = new System.Drawing.Point(81, 251);
             this.btncongon1.Name = "btncongon1";
-            this.btncongon1.Size = new System.Drawing.Size(475, 330);
+            this.btncongon1.Size = new System.Drawing.Size(475, 317);
             this.btncongon1.TabIndex = 18;
             this.btncongon1.UseVisualStyleBackColor = true;
             this.btncongon1.Click += new System.EventHandler(this.btncongon1_Click);
@@ -110,11 +111,22 @@
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(267, 571);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Ramon Salcedo";
+            // 
             // Ramon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 593);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -128,6 +140,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -138,5 +151,6 @@
         private System.Windows.Forms.Button btncont;
         private System.Windows.Forms.Button btncongon1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label3;
     }
 }

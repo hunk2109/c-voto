@@ -33,12 +33,16 @@
             this.btnca1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btncan3
             // 
+            this.btncan3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btncan3.BackgroundImage = global::Votowf.Properties.Resources._17;
             this.btncan3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncan3.Location = new System.Drawing.Point(317, 124);
@@ -50,6 +54,7 @@
             // 
             // btncan2
             // 
+            this.btncan2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btncan2.BackgroundImage = global::Votowf.Properties.Resources._19;
             this.btncan2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncan2.Location = new System.Drawing.Point(166, 124);
@@ -61,6 +66,7 @@
             // 
             // btnca1
             // 
+            this.btnca1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnca1.BackgroundImage = global::Votowf.Properties.Resources._9;
             this.btnca1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnca1.Location = new System.Drawing.Point(12, 124);
@@ -72,6 +78,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -82,6 +89,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_17_Confirmar;
             this.pictureBox2.Location = new System.Drawing.Point(12, 68);
             this.pictureBox2.Name = "pictureBox2";
@@ -90,11 +98,44 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(35, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Ramon Salcedo";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(194, 252);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Karina Bisono";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(342, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Gabriel Genao";
+            // 
             // Diputado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btncan3);
@@ -105,6 +146,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -115,5 +157,8 @@
         private System.Windows.Forms.Button btncan3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

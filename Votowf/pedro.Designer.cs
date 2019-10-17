@@ -34,6 +34,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncongon1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,16 +110,27 @@
             this.btncongon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btncongon1.Location = new System.Drawing.Point(58, 249);
             this.btncongon1.Name = "btncongon1";
-            this.btncongon1.Size = new System.Drawing.Size(475, 330);
+            this.btncongon1.Size = new System.Drawing.Size(475, 305);
             this.btncongon1.TabIndex = 12;
             this.btncongon1.UseVisualStyleBackColor = true;
             this.btncongon1.Click += new System.EventHandler(this.btncongon1_Click);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(257, 557);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Pedro Garcia";
             // 
             // pedro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 591);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -131,6 +143,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -142,5 +155,6 @@
         private System.Windows.Forms.Button btnreto;
         private System.Windows.Forms.Button btncont;
         private System.Windows.Forms.Button btncongon1;
+        private System.Windows.Forms.Label label2;
     }
 }

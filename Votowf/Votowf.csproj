@@ -248,6 +248,12 @@
       <DependentUpon>valcalimp.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="valcd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="valcd.Designer.cs">
+      <DependentUpon>valcd.cs</DependentUpon>
+    </Compile>
     <Compile Include="vdipimp.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -289,6 +295,18 @@
     </Compile>
     <Compile Include="votp.Designer.cs">
       <DependentUpon>votp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vregimp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vregimp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vregv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vregv.Designer.cs">
+      <DependentUpon>vregv.cs</DependentUpon>
     </Compile>
     <Compile Include="vsenv.cs">
       <SubType>Form</SubType>
@@ -385,6 +403,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>valcalimp.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="valcd.resx">
+      <DependentUpon>valcd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vdipimp.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>vdipimp.cs</LastGenOutput>
@@ -408,6 +429,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="votp.resx">
       <DependentUpon>votp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vregimp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>vregimp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vregv.resx">
+      <DependentUpon>vregv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vsenv.resx">
       <DependentUpon>vsenv.cs</DependentUpon>
