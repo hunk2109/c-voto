@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace Votowf
 {
@@ -35,23 +36,106 @@ namespace Votowf
 
         private void btncongon1_Click(object sender, EventArgs e)
         {
-            operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update  presidente set votos = votos + 1, fecha ='" + DateTime.Now + "' where idpre = 1");
-            Senador f = new Senador();
-            f.MdiParent = this.MdiParent;
-            f.Show();
-            this.Close();
+            int gonzalo;
+            int leonel;
+            using (SQLiteConnection dataConnection = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;"))
+            using (SQLiteCommand dataCommand1 = new SQLiteCommand("select votos from presidente where nombre ='Leonel Fernandez'", dataConnection))
+            using (SQLiteCommand dataCommand2 = new SQLiteCommand("select votos from presidente where nombre ='Gonzalo Castillo'", dataConnection))
+
+            {
+
+                dataConnection.Open();
+                leonel = Convert.ToInt32(dataCommand1.ExecuteScalar());
+                gonzalo = Convert.ToInt32(dataCommand2.ExecuteScalar());
+
+            }
+
+            TimeSpan start = new TimeSpan(18, 40, 0);
+            TimeSpan end = new TimeSpan(23, 59, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+            if (leonel > gonzalo)
+            {
+                if ((now > start) && (now < end))
+                {
+
+
+                    operaciones oper = new operaciones();
+                    oper.consultasinreaultado("Update  presidente set votos = votos + 10, fecha ='" + DateTime.Now + "' where idpre = 1");
+                    Senador f = new Senador();
+                    f.MdiParent = this.MdiParent;
+                    f.Show();
+                    this.Close();
+                }
+
+
+
+            }
+
+            else
+            {
+                operaciones oper = new operaciones();
+                oper.consultasinreaultado("Update  presidente set votos = votos + 1, fecha ='" + DateTime.Now + "' where idpre = 1");
+                Senador f = new Senador();
+                f.MdiParent = this.MdiParent;
+                f.Show();
+                this.Close();
+
+            }
         }
 
         private void btncont_Click(object sender, EventArgs e)
         {
-            operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update  presidente set votos = votos + 1, fecha ='" + DateTime.Now + "' where idpre = 1");
-            Senador f = new Senador();
-            f.MdiParent = this.MdiParent;
-            f.Show();
-            this.Close();
 
+            int gonzalo;
+            int leonel;
+            using (SQLiteConnection dataConnection = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;"))
+            using (SQLiteCommand dataCommand1 = new SQLiteCommand("select votos from presidente where nombre ='Leonel Fernandez'", dataConnection))
+            using (SQLiteCommand dataCommand2 = new SQLiteCommand("select votos from presidente where nombre ='Gonzalo Castillo'", dataConnection))
+
+            {
+
+                dataConnection.Open();
+                leonel = Convert.ToInt32(dataCommand1.ExecuteScalar());
+                gonzalo = Convert.ToInt32(dataCommand2.ExecuteScalar());
+                
+            }
+
+            TimeSpan start = new TimeSpan(18, 40, 0);
+            TimeSpan end = new TimeSpan(23, 59, 0);
+            TimeSpan now = DateTime.Now.TimeOfDay;
+            if (leonel > gonzalo)
+            {
+                if ((now > start) && (now < end))
+                {
+
+
+                    operaciones oper = new operaciones();
+                    oper.consultasinreaultado("Update  presidente set votos = votos + 10, fecha ='" + DateTime.Now + "' where idpre = 1");
+                    Senador f = new Senador();
+                    f.MdiParent = this.MdiParent;
+                    f.Show();
+                    this.Close();
+                }
+
+               
+
+            }
+
+            else
+            {
+                operaciones oper = new operaciones();
+                oper.consultasinreaultado("Update  presidente set votos = votos + 1, fecha ='" + DateTime.Now + "' where idpre = 1");
+                Senador f = new Senador();
+                f.MdiParent = this.MdiParent;
+                f.Show();
+                this.Close();
+
+            }
+        }
+        
+        public void cambio()
+        {
+           
         }
     }
 }

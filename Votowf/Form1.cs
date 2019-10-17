@@ -52,6 +52,21 @@ namespace Votowf
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            int gonzalo;
+            int leonel;
+            using (SQLiteConnection dataConnection = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;"))
+            using (SQLiteCommand dataCommand1 = new SQLiteCommand("select votos from presidente where nombre ='Leonel Fernandez'", dataConnection))
+            using (SQLiteCommand dataCommand2 = new SQLiteCommand("select votos from presidente where nombre ='Leonel Fernandez'", dataConnection))
+
+            {
+
+                dataConnection.Open();
+                leonel = Convert.ToInt32(dataCommand1.ExecuteScalar());
+                gonzalo = Convert.ToInt32(dataCommand2.ExecuteScalar());
+
+
+
+            }
             this.FormBorderStyle = FormBorderStyle.None;
             this.ControlBox = false;
             this.MaximizeBox = false;
