@@ -197,7 +197,10 @@ namespace Votowf
 
         private void Btntervot_Click(object sender, EventArgs e)
         {
-            
+            verf f = new verf();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
         }
     }
 }

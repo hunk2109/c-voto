@@ -242,6 +242,30 @@
     <Compile Include="Senador.Designer.cs">
       <DependentUpon>Senador.cs</DependentUpon>
     </Compile>
+    <Compile Include="vdipimp.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vdipimp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vdipv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vdipv.Designer.cs">
+      <DependentUpon>vdipv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verf.Designer.cs">
+      <DependentUpon>verf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vervotpres.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vervotpres.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="voto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +276,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>votos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="votp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="votp.Designer.cs">
+      <DependentUpon>votp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vsenv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vsenv.Designer.cs">
+      <DependentUpon>vsenv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vvs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vvs.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Alcalde.resx">
@@ -333,12 +375,36 @@
     <EmbeddedResource Include="Senador.resx">
       <DependentUpon>Senador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vdipimp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>vdipimp.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vdipv.resx">
+      <DependentUpon>vdipv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verf.resx">
+      <DependentUpon>verf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vervotpres.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>vervotpres.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="voto.resx">
       <DependentUpon>voto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="votos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>votos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="votp.resx">
+      <DependentUpon>votp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vsenv.resx">
+      <DependentUpon>vsenv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vvs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>vvs.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
