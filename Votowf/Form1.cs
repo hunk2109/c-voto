@@ -126,11 +126,6 @@ namespace Votowf
 
         public void startseccion()
         {
-           
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
             operaciones oper = new operaciones();
             string actuser = Convert.ToString(textBox1.Text);
             SQLiteConnection cnx = new SQLiteConnection("Data Source=C:\\bdd\\sm.s3db; Version=3;");
@@ -163,6 +158,11 @@ namespace Votowf
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            startseccion();
         }
     }
 }

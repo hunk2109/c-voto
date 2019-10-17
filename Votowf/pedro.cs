@@ -28,7 +28,7 @@ namespace Votowf
         private void btncont_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update senador set voto = voto + 1 where idsen = 2");
+            oper.consultasinreaultado("Update senador set voto = voto + 1, fecha ='" + DateTime.Now + "' where idsen = 2");
             Diputado f = new Diputado();
             f.MdiParent = this.MdiParent;
             f.Show();
@@ -38,7 +38,7 @@ namespace Votowf
         private void btncongon1_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update senador set voto = voto + 1 where idsen = 2");
+            oper.consultasinreaultado("Update senador set voto = voto + 1, fecha ='" + DateTime.Now + "' where idsen = 2");
             Diputado f = new Diputado();
             f.MdiParent = this.MdiParent;
             f.Show();

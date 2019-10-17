@@ -30,7 +30,7 @@ namespace Votowf
         {
 
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update Diputado set voto = voto + 1 where iddip = 3");
+            oper.consultasinreaultado("Update Diputado set voto = voto + 1, fecha ='" + DateTime.Now + "' where iddip = 3");
             Alcalde f = new Alcalde();
             f.MdiParent = this.MdiParent;
             f.Show();
@@ -40,7 +40,7 @@ namespace Votowf
         private void btncongon1_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("Update Diputado set voto = voto + 1 where iddip = 3");
+            oper.consultasinreaultado("Update Diputado set voto = voto + 1, fecha ='" + DateTime.Now + "' where iddip = 3");
             Alcalde f = new Alcalde();
             f.MdiParent = this.MdiParent;
             f.Show();
