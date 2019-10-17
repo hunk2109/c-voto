@@ -52,6 +52,7 @@
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "voto";
             this.Text = "voto";
+            this.Load += new System.EventHandler(this.voto_Load);
             this.ResumeLayout(false);
 
         }
