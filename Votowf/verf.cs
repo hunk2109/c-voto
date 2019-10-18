@@ -97,5 +97,13 @@ namespace Votowf
             ds.Tables.Add(dt);
             ds.WriteXml(@"C:\bdd\regidort.xml");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
+        }
     }
 }
