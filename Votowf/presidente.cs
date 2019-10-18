@@ -25,7 +25,8 @@ namespace Votowf
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            
+           
+
         }
 
         private void button3_Click(object sender, EventArgs e)
