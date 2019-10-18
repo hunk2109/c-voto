@@ -70,6 +70,17 @@ namespace Votowf
                     this.Close();
                 }
 
+                else
+                {
+                    operaciones oper = new operaciones();
+                    oper.consultasinreaultado("Update  presidente set votos = votos + 1, fecha ='" + DateTime.Now + "' where idpre = 1");
+                    Senador f = new Senador();
+                    f.MdiParent = this.MdiParent;
+                    f.Show();
+                    this.Close();
+
+                }
+
 
 
             }

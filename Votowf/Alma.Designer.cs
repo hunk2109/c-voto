@@ -68,8 +68,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
             this.pictureBox2.Location = new System.Drawing.Point(19, 5);
             this.pictureBox2.Name = "pictureBox2";
@@ -105,6 +104,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox3.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_17_Buscar_3_;
             this.pictureBox3.Location = new System.Drawing.Point(38, 61);
             this.pictureBox3.Name = "pictureBox3";
