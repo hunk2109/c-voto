@@ -97,6 +97,7 @@
             this.Controls.Add(this.button1);
             this.Name = "verf";
             this.Text = "verf";
+            this.Load += new System.EventHandler(this.Verf_Load);
             this.ResumeLayout(false);
 
         }

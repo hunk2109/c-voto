@@ -12,6 +12,7 @@ namespace Votowf
 {
     public partial class verf : Form
     {
+        operaciones oper = new operaciones();
         public verf()
         {
             InitializeComponent();
@@ -46,6 +47,55 @@ namespace Votowf
         {
             vregv f = new vregv();
             f.Show();
+        }
+
+        private void Verf_Load(object sender, EventArgs e)
+        {
+            presidente();
+            senador();
+            diputado();
+            alcalde();
+            regidor();
+        }
+
+        private void presidente()
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = oper.cosnsultaconresultado("select nombre,votos from presidente");
+            ds.Tables.Add(dt);
+            ds.WriteXml(@"C:\bdd\presidentet.xml");
+        }
+
+        private void senador()
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = oper.cosnsultaconresultado("select nombre,voto from senador");
+            ds.Tables.Add(dt);
+            ds.WriteXml(@"C:\bdd\senadort.xml");
+        }
+
+        private void diputado()
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = oper.cosnsultaconresultado("select nombre,voto from diputado");
+            ds.Tables.Add(dt);
+            ds.WriteXml(@"C:\bdd\diputadost.xml");
+        }
+
+        private void alcalde()
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = oper.cosnsultaconresultado("select nombre,voto from alcalde");
+            ds.Tables.Add(dt);
+            ds.WriteXml(@"C:\bdd\alcaldet.xml");
+        }
+
+        private void regidor()
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = oper.cosnsultaconresultado("select nombre,voto from regidor");
+            ds.Tables.Add(dt);
+            ds.WriteXml(@"C:\bdd\regidort.xml");
         }
     }
 }
