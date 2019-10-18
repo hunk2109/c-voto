@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech;
+using System.Speech.Synthesis;
+
 
 namespace Votowf
 {
@@ -16,6 +19,7 @@ namespace Votowf
         {
             InitializeComponent();
         }
+        SpeechSynthesizer ltr = new SpeechSynthesizer();
 
         private void Senador_Load(object sender, EventArgs e)
         {
@@ -50,6 +54,28 @@ namespace Votowf
             this.Close();
         }
 
+        private void button1_Enter(object sender, EventArgs e)
+        {
+
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync( label1.Text);
+        }
+
+        private void button2_Enter(object sender, EventArgs e)
+        {
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label2.Text);
+
+        }
+
+        private void button3_Enter(object sender, EventArgs e)
+        {
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label3.Text);
+        }
     }
     }
 

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech;
+using System.Speech.Synthesis;
+
 
 namespace Votowf
 {
@@ -59,6 +62,24 @@ namespace Votowf
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btncongon1_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Confirmar" + label3.Text);
+
+        }
+
+        private void btnreto_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(btnreto.Text);
 
         }
     }

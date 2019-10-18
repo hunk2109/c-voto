@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech;
+using System.Speech.Synthesis;
+
 
 namespace Votowf
 {
@@ -16,6 +19,7 @@ namespace Votowf
         {
             InitializeComponent();
         }
+        SpeechSynthesizer ltr = new SpeechSynthesizer();
 
         private void Leonel_Load(object sender, EventArgs e)
         {
@@ -51,6 +55,22 @@ namespace Votowf
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
+        }
+
+        private void btncongon1_Enter(object sender, EventArgs e)
+        {
+
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Confirmar" + label1.Text);
+        }
+
+        private void btnreto_Enter(object sender, EventArgs e)
+        {
+
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Retornar a la seleccion de precandidatos a la Presidentes");
         }
     }
 }

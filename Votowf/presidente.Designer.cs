@@ -71,6 +71,7 @@
             this.btnleo.TabIndex = 2;
             this.btnleo.UseVisualStyleBackColor = true;
             this.btnleo.Click += new System.EventHandler(this.button3_Click);
+            this.btnleo.Enter += new System.EventHandler(this.btnleo_Enter);
             // 
             // Btngon
             // 
@@ -83,6 +84,7 @@
             this.Btngon.TabIndex = 0;
             this.Btngon.UseVisualStyleBackColor = true;
             this.Btngon.Click += new System.EventHandler(this.button1_Click);
+            this.Btngon.Enter += new System.EventHandler(this.Btngon_Enter);
             // 
             // label1
             // 

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech;
+using System.Speech.Synthesis;
+
 
 namespace Votowf
 {
@@ -41,5 +44,36 @@ namespace Votowf
             f.Show();
             this.Close();
         }
+
+        private void Diputado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnca1_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label1.Text);
+        }
+
+        private void btncan2_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label2.Text);
+        }
+
+        private void btncan3_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label3.Text);
+
+        }
     }
-}
+    }
+

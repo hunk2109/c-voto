@@ -90,6 +90,7 @@
             this.button1.Size = new System.Drawing.Size(128, 125);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Enter += new System.EventHandler(this.button1_Enter);
             // 
             // Btngon
             // 
@@ -102,6 +103,7 @@
             this.Btngon.TabIndex = 1;
             this.Btngon.UseVisualStyleBackColor = true;
             this.Btngon.Click += new System.EventHandler(this.Btngon_Click);
+            this.Btngon.Enter += new System.EventHandler(this.Btngon_Enter);
             // 
             // partidos
             // 

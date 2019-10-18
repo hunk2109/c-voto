@@ -8,16 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Speech;
+using System.Speech.Synthesis;
 
 namespace Votowf
 {
     public partial class gonzalo : Form
     {
+        SpeechSynthesizer ltr = new SpeechSynthesizer();
         public gonzalo()
         {
             InitializeComponent();
         }
-
+        
         private void gonzalo_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -136,6 +139,21 @@ namespace Votowf
         public void cambio()
         {
            
+        }
+
+        private void btncongon1_Enter(object sender, EventArgs e)
+        {
+           ;
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Confirmar"+label1.Text);
+        }
+
+        private void btnreto_Enter(object sender, EventArgs e)
+        {
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(btnreto.Text);
         }
     }
 }

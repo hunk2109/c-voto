@@ -7,11 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Speech;
+using System.Speech.Synthesis;
+
 
 namespace Votowf
 {
+
     public partial class partidos : Form
     {
+        SpeechSynthesizer ltr = new SpeechSynthesizer();
         public partidos()
         {
             InitializeComponent();
@@ -32,6 +37,21 @@ namespace Votowf
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+        }
+
+        private void Btngon_Enter(object sender, EventArgs e)
+        {
+
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label1.Text);
+        }
+
+        private void button1_Enter(object sender, EventArgs e)
+        {
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label2.Text);
         }
     }
 }
