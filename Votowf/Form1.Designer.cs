@@ -120,6 +120,7 @@
             // 
             // btntervot
             // 
+            this.btntervot.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btntervot.Location = new System.Drawing.Point(491, 318);
             this.btntervot.Name = "btntervot";
             this.btntervot.Size = new System.Drawing.Size(75, 37);

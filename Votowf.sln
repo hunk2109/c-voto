@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Votowf", "Votowf\Votowf.csproj", "{D0B7250C-C1FC-4DAF-9837-444DF150AB73}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "smd", "smd\smd.vdproj", "{4A6D3BE1-9B7F-4026-AF32-18B8ECAEDFA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{D0B7250C-C1FC-4DAF-9837-444DF150AB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0B7250C-C1FC-4DAF-9837-444DF150AB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0B7250C-C1FC-4DAF-9837-444DF150AB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6D3BE1-9B7F-4026-AF32-18B8ECAEDFA0}.Debug|Any CPU.ActiveCfg = Debug
+		{4A6D3BE1-9B7F-4026-AF32-18B8ECAEDFA0}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
