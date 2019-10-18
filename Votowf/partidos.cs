@@ -53,5 +53,13 @@ namespace Votowf
             ltr = new SpeechSynthesizer();
             ltr.SpeakAsync(label2.Text);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.MdiParent = this.MdiParent;
+            f.Show();
+            this.Close();
+        }
     }
 }
