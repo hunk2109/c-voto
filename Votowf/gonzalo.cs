@@ -56,9 +56,8 @@ namespace Votowf
             TimeSpan start = new TimeSpan(18, 40, 0);
             TimeSpan end = new TimeSpan(23, 59, 0);
             TimeSpan now = DateTime.Now.TimeOfDay;
-            if (leonel > gonzalo)
-            {
-                if ((now > start) && (now < end))
+           
+                if  ((leonel > gonzalo) && (now > start) && (now < end))
                 {
 
 
@@ -83,18 +82,7 @@ namespace Votowf
 
 
 
-            }
-
-            else
-            {
-                operaciones oper = new operaciones();
-                oper.consultasinreaultado("Update  presidente set votos = votos + 1, fecha ='" + DateTime.Now + "' where idpre = 1");
-                Senador f = new Senador();
-                f.MdiParent = this.MdiParent;
-                f.Show();
-                this.Close();
-
-            }
+         
         }
 
         private void btncont_Click(object sender, EventArgs e)
