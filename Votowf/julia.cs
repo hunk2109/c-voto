@@ -34,12 +34,11 @@ namespace Votowf
             
             operaciones oper = new operaciones();
             oper.consultasinreaultado("Update regidor set voto = voto + 1, fecha ='" + DateTime.Now + "' where idreg = 1");
-            Form1 f = new Form1();
+            confivt f = new confivt();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
-            voto frm = new voto();
-            frm.Show();
+           
 
            
 
@@ -52,12 +51,11 @@ namespace Votowf
            
             operaciones oper = new operaciones();
             oper.consultasinreaultado("Update regidor set voto = voto + 1, fecha ='" + DateTime.Now + "' where idreg = 1");
-            Form1 f = new Form1();
+            confivt f = new confivt();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
-            voto frm = new voto();
-            frm.Show();
+            
 
 
         }

@@ -44,7 +44,7 @@ namespace Votowf
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            partidos f = new partidos();
+            confivt f = new confivt();
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();

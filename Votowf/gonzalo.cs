@@ -53,7 +53,7 @@ namespace Votowf
 
             }
 
-            TimeSpan start = new TimeSpan(18, 40, 0);
+            TimeSpan start = new TimeSpan(9, 00, 0);
             TimeSpan end = new TimeSpan(23, 59, 0);
             TimeSpan now = DateTime.Now.TimeOfDay;
            

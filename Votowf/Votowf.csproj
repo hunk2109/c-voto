@@ -114,6 +114,12 @@
     <Compile Include="Alma.Designer.cs">
       <DependentUpon>Alma.cs</DependentUpon>
     </Compile>
+    <Compile Include="confivt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confivt.Designer.cs">
+      <DependentUpon>confivt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contenedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Alma.resx">
       <DependentUpon>Alma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confivt.resx">
+      <DependentUpon>confivt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contenedor.resx">
       <DependentUpon>Contenedor.cs</DependentUpon>
@@ -558,6 +567,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot_2019-10-17 Buscar%283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />
