@@ -48,7 +48,7 @@ namespace Votowf
 
         private void Btncont_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            partidos f = new partidos();
             f.Show();
             f.MdiParent = this.MdiParent;
             f.Show();            
@@ -60,7 +60,7 @@ namespace Votowf
 
         private void Btnreto_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
+            partidos f = new partidos();
             f.Show();
             f.MdiParent = this.MdiParent;
             f.Show();            
