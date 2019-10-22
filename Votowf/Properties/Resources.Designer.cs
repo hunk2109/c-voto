@@ -73,6 +73,16 @@ namespace Votowf.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1200px_MAIS_svg {
+            get {
+                object obj = ResourceManager.GetObject("1200px-MAIS.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _14 {
             get {
                 object obj = ResourceManager.GetObject("14", resourceCulture);
@@ -206,6 +216,16 @@ namespace Votowf.Properties {
         internal static System.Drawing.Bitmap d {
             get {
                 object obj = ResourceManager.GetObject("d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gear_logo_vector_png_open_2000 {
+            get {
+                object obj = ResourceManager.GetObject("gear-logo-vector-png-open-2000", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

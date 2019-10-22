@@ -116,12 +116,12 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
+            this.pictureBox2.Image = global::Votowf.Properties.Resources.logonuevo;
             this.pictureBox2.Location = new System.Drawing.Point(12, 27);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(559, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(563, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
             // 
             // pld
@@ -129,13 +129,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 559);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Btngon);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnreto);
             this.Controls.Add(this.btncont);
-            this.Controls.Add(this.pictureBox2);
             this.Name = "pld";
             this.Text = "pld";
             this.Load += new System.EventHandler(this.pld_Load);
@@ -148,12 +148,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnreto;
         private System.Windows.Forms.Button btncont;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Btngon;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
