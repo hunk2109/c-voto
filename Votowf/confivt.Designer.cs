@@ -269,7 +269,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::Votowf.Properties.Resources.Screenshot_2019_10_15_Junta_Central_Electoral;
+            this.pictureBox2.Image = global::Votowf.Properties.Resources.logonuevo;
             this.pictureBox2.Location = new System.Drawing.Point(16, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(563, 50);
