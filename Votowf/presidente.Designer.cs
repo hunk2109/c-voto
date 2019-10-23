@@ -98,12 +98,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::Votowf.Properties.Resources.logonuevo;
+            this.pictureBox1.Image = global::Votowf.Properties.Resources.logonuevo1;
             this.pictureBox1.Location = new System.Drawing.Point(12, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(776, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // presidente

@@ -117,10 +117,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = global::Votowf.Properties.Resources.logonuevo;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 25);
+            this.pictureBox2.Image = global::Votowf.Properties.Resources.logonuevo1;
+            this.pictureBox2.Location = new System.Drawing.Point(30, 25);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(563, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(545, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
