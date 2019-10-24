@@ -67,5 +67,12 @@ namespace Votowf
             ltr = new SpeechSynthesizer();
             ltr.SpeakAsync( label3.Text);
         }
+
+        private void Alcalde_Load(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Alcade");
+            this.ActiveControl = pictureBox1;
+        }
     }
 }

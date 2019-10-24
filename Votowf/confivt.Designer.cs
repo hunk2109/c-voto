@@ -72,6 +72,7 @@
             this.btnreto.Text = "Retornar";
             this.btnreto.UseVisualStyleBackColor = false;
             this.btnreto.Click += new System.EventHandler(this.Btnreto_Click);
+            this.btnreto.Enter += new System.EventHandler(this.btnreto_Enter);
             // 
             // btncont
             // 
@@ -84,6 +85,7 @@
             this.btncont.Text = "Continuar";
             this.btncont.UseVisualStyleBackColor = false;
             this.btncont.Click += new System.EventHandler(this.Btncont_Click);
+            this.btncont.Enter += new System.EventHandler(this.btncont_Enter);
             // 
             // label1
             // 

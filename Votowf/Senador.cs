@@ -27,6 +27,9 @@ namespace Votowf
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Senador");
+            this.ActiveControl = pictureBox1;
         }
 
         private void button1_Click(object sender, EventArgs e)

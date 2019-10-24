@@ -47,7 +47,9 @@ namespace Votowf
 
         private void Diputado_Load(object sender, EventArgs e)
         {
-
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Diputado");
+            this.ActiveControl = pictureBox1;
         }
 
         private void btnca1_Enter(object sender, EventArgs e)

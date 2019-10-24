@@ -146,6 +146,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Alcalde";
             this.Text = "Alcalde";
+            this.Load += new System.EventHandler(this.Alcalde_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

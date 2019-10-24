@@ -25,7 +25,13 @@ namespace Votowf
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-           
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Precindetes");
+            this.ActiveControl = pictureBox1;
+
+
 
         }
 

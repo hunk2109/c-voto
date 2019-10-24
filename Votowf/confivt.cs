@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Speech;
+using System.Speech.Synthesis;
 
 namespace Votowf
 {
@@ -44,11 +46,19 @@ namespace Votowf
                 label4.Text = a.ToString();
                 label5.Text = r.ToString();
             }
+
+            this.ActiveControl = label1;
+
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Confirmar voto por: Presidente:  "+label1.Text+ ",Senador: " + label2.Text + ",Diputado: " + label3.Text + ",Alcalde: " + label4.Text + ",Regidor: " + label5.Text + "");
+
         }
 
         private void Btncont_Click(object sender, EventArgs e)
         {
-            partidos f = new partidos();
+            Form1 f = new Form1();
             f.Show();
             f.MdiParent = this.MdiParent;
             f.Show();            
@@ -60,7 +70,7 @@ namespace Votowf
 
         private void Btnreto_Click(object sender, EventArgs e)
         {
-            partidos f = new partidos();
+            Form1 f = new Form1();
             f.Show();
             f.MdiParent = this.MdiParent;
             f.Show();            
@@ -74,6 +84,22 @@ namespace Votowf
 
 
 
+        }
+
+        private void btnreto_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Reiniciar Votacion");
+        }
+
+        private void btncont_Enter(object sender, EventArgs e)
+        {
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Confirmar  Votacion");
         }
     }
 }

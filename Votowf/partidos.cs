@@ -37,6 +37,8 @@ namespace Votowf
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            ltr.SpeakAsync("Partidos");
+            this.ActiveControl = pictureBox1;
         }
 
         private void Btngon_Enter(object sender, EventArgs e)
