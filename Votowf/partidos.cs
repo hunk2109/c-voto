@@ -63,5 +63,20 @@ namespace Votowf
             f.Show();
             this.Close();
         }
+
+        private void button2_Enter(object sender, EventArgs e)
+        {
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label3.Text);
+
+        }
+
+        private void button3_Enter(object sender, EventArgs e)
+        {
+            ltr.Dispose();
+            ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync(label4.Text);
+        }
     }
 }
