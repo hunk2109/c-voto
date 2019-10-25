@@ -45,7 +45,9 @@ namespace Votowf
 
         private void Regidor_Load(object sender, EventArgs e)
         {
-
+            SpeechSynthesizer ltr = new SpeechSynthesizer();
+            ltr.SpeakAsync("Regidor");
+            this.ActiveControl = pictureBox1;
         }
 
         private void button1_Enter(object sender, EventArgs e)

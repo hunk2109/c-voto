@@ -40,8 +40,7 @@ namespace Votowf
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
-            voto frm = new voto();
-            frm.Show();
+            
         }
 
         private void btncongon1_Click(object sender, EventArgs e)
@@ -53,8 +52,7 @@ namespace Votowf
             f.MdiParent = this.MdiParent;
             f.Show();
             this.Close();
-            voto frm = new voto();
-            frm.Show();
+           
         }
 
         private void btncongon1_Enter(object sender, EventArgs e)
